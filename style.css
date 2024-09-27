@@ -1,1 +1,631 @@
+/** CALL FOR SPEAKERS
+ * @author vachan
+ */
+body.page-id-743 figure.wp-block-post-featured-image {
+  display: none !important;
+}
 
+/** Tickets 
+ * @author gouten
+ * ========================
+ */
+#tix * {
+  line-height: 1.5;
+}
+
+.tix_tickets_table,
+.tix-ticket-form  {
+  max-width: 1008px;
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+.tix_tickets_table td,
+.tix_tickets_table th,
+.tix-ticket-form th,
+.tix-ticket-form td {
+  padding: 1.5rem 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--wp--preset--color--contrast);
+}
+
+.tix-tickets-list thead th,
+.tix-ticket-form thead th {
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--white);
+  font-weight: 700;
+}
+
+.tix_tickets_table tbody th,
+.tix_tickets_table tbody td,
+.tix-ticket-form tbody th,
+.tix-ticket-form tbody td {
+  padding: 3rem 1.5rem;
+}
+
+.tix_tickets_table th:first-child,
+.tix_tickets_table td:first-child,
+.tix-ticket-form th:first-child,
+.tix-ticket-form td:first-child {
+  padding-left: 3rem; 
+}
+.tix_tickets_table th:last-child,
+.tix_tickets_table td:last-child,
+.tix-ticket-form th:last-child,
+.tix-ticket-form td:last-child {
+  padding-right: 3rem;
+}
+
+.tix_tickets_table .tix-column-description,
+.tix-ticket-form td {
+  text-align: left;
+}
+
+.tix_tickets_table + p  {
+  padding: 0 1rem;
+}
+.tix_tickets_table + p input[type="submit"],
+#tix .tix-submit input[type="submit"],
+#tix .tix-submit .tix-checkout-button {
+  background-color: var(--wp--preset--color--tertiary);
+  color: var(--wp--preset--color--black);
+  padding: 1rem 2rem;
+  border: none;
+  font-weight: 700;
+  border-radius: 2rem;
+}
+
+.tix_tickets_table input[type="text"],
+.tix_tickets_table input[type="textarea"],
+.tix_tickets_table input[type="email"],
+.tix_tickets_table input[type="url"],
+.tix_tickets_table select {
+  padding: .5rem;
+  border: 1px solid var(--wp--preset--color--contrast);
+  border-radius: 4px;
+}
+.tix_tickets_table .tix-row-coupon input[type="text"] {
+  width: 50%;
+}
+.tix_tickets_table select:focus {
+   outline: none;
+}
+
+/* Ticket Serect list Only */
+.tix-tickets-list tbody tr[class^="tix-ticket-"],
+.tix-ticket-form tbody tr {
+  border-bottom: 1px solid var(--wp--preset--color--contrast);
+}
+
+.tix-tickets-list .tix-ticket-title {
+  font-size: 1.5rem;
+  color: var(--wp--preset--color--primary);
+  font-weight: 700;
+}
+
+.tix-tickets-list .wca25-ticket-currency {
+  font-weight: bold;
+}
+
+.tix-tickets-list .tix-row-coupon #tix-coupon-link {
+  color: var(--wp--preset--color--primary);
+  font-weight: 700;
+}
+.tix-tickets-list .tix-row-coupon strong {
+  color: var(--wp--preset--color--primary);
+}
+
+.tix-tickets-list .tix-row-coupon input[name="tix_coupon_submit"] {
+  display: inline-block;
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--white);
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+ .tix-tickets-list .tix-row-coupon td {
+  padding: 1rem;
+}
+
+/* Summary and Information Only */
+.tix-has-dynamic-receipts h2 {
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--white);
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 1.5rem 3rem;
+}
+
+/* Summary Only */
+.tix_tickets_table.tix-order-summary th,
+.tix_tickets_table.tix-order-summary td {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.tix-order-summary .tix-column-description strong {
+  font-size: 1.25rem;
+}
+.tix-order-summary .tix-column-description small {
+  display: block;
+  padding-top: .5rem;
+}
+
+.tix-row-total td:first-child strong {
+  display: inline-block;
+}
+.tix-row-total .screen-reader-text {
+  clip: auto;
+  clip-path: none;
+  overflow: visible;
+  position: static !important;
+  font-size: 0.8rem;
+}
+
+/* Information Only */
+.tix_tickets_table.tix-attendee-form th,
+.tix_tickets_table.tix-attendee-form td {
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.tix_tickets_table.tix-attendee-form th {
+  font-size: 1.25rem;
+  color: var(--wp--preset--color--primary);
+}
+
+tr[class^="tix-row-"] .tix-screen-reader-fieldset:has(input[type="radio"])  {
+  display: flex;
+  flex-wrap: wrap;
+}
+tr[class^="tix-row-"] .tix-screen-reader-fieldset:has(input[type="radio"]) br {
+  display: none;
+}
+[class^="tix-row-"] .tix-screen-reader-fieldset:has(input[type="radio"]) label {
+  margin: 0 1.5rem .5rem 0;
+}
+
+tr[class^="tix-row-"] .tix-screen-reader-fieldset:has(input[type="checkbox"])  {
+  display: flex;
+  flex-wrap: wrap;
+}
+tr[class^="tix-row-"] .tix-screen-reader-fieldset:has(input[type="checkbox"]) br {
+  display: none;
+}
+[class^="tix-row-"] .tix-screen-reader-fieldset:has(input[type="checkbox"]) label {
+  min-width: 50%;
+  padding-right: 2rem;
+  padding-bottom: .5rem;
+  box-sizing: border-box;
+}
+
+#tix form {
+  overflow: auto;
+}
+
+.tix-ticket-form {
+  margin-bottom: 3rem;
+}
+
+/* Smartphone and Tablet size */
+@media screen and (max-width: 768px) {
+  .tix_tickets_table tbody th,
+  .tix_tickets_table tbody td {
+    padding: 1.5rem;
+  }
+
+  /* Ticket Serect list Only */
+  .tix_tickets_table thead tr,
+  .tix-ticket-form thead tr {
+    display: block;
+    background-color: var(--wp--preset--color--primary);
+    height: 1rem;
+    content: "";
+  }
+  .tix_tickets_table thead th,
+  .tix-ticket-form thead th {
+    display: none;
+  }
+  .tix_tickets_table tbody tr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-auto-rows: auto;
+  }
+  .tix_tickets_table th:first-child,
+  .tix_tickets_table td:first-child
+  {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-left: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .tix_tickets_table th:last-child,
+  .tix_tickets_table td:last-child {
+    padding-right: 1.5rem;
+  }
+  .tix_tickets_table tbody th {
+    padding-top: 3rem;
+  }
+  .tix_tickets_table tbody td {
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
+  .tix-tickets-list .tix-row-coupon td {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .tix-tickets-list tbody td::before {
+    display: block;
+    font-weight: 700;
+    color: var(--wp--preset--color--primary);
+    margin-bottom: .5rem;
+  }
+  .tix-column-price::before {
+    content: "Price";
+  }
+  .tix-column-remaining::before {
+    content: "Remaining";
+  }
+  .tix-column-quantity::before {
+    content: "Quantity";
+  }
+
+  /* Summary Only */
+  .tix-order-summary thead tr {
+    display: none;
+  }
+  .tix-order-summary tr {
+    border-bottom: 1px dashed var(--wp--preset--color--contrast);
+  }
+  .tix_tickets_table.tix-order-summary td {
+    padding-bottom: 2rem;
+  }
+  .tix-order-summary tr.tix-row-total {
+    border: none;
+  }
+  .tix-order-summary td.tix-column-description {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .tix-order-summary tbody td::before {
+    display: block;
+    font-weight: 700;
+    color: var(--wp--preset--color--primary);
+    margin-bottom: .5rem;
+  }
+  .tix-column-per-ticket::before {
+    content: "Per Ticket";
+  }
+  .tix-row-total {
+    padding-top: 1rem;
+  }
+  .tix-row-total td {
+    padding: 1.5rem;
+  }
+  .tix-row-total td:first-child {
+    padding: 0 1.5rem;
+  }
+  .tix-row-total td:last-child {
+    text-align: right;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  /* Information Only */
+  .tix_tickets_table.tix-attendee-form tr {
+   display: block;
+  }
+  .tix_tickets_table.tix-attendee-form th,
+  .tix_tickets_table.tix-attendee-form td.tix-left,
+  .tix_tickets_table.tix-attendee-form td.tix-right {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .tix_tickets_table.tix-attendee-form td.tix-left {
+    padding-bottom: 0;
+    font-weight: 700;
+  }
+  .tix_tickets_table.tix-attendee-form .tix-row-health-advisory td.tix-left {
+    font-weight: normal;
+  }
+
+  .tix-attendee-form input[type="text"],
+  .tix-attendee-form input[type="textarea"],
+  .tix-attendee-form input[type="email"],
+  .tix-attendee-form input[type="url"] {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  /* Complpete page only */
+  .tix-ticket-form tr {
+    display: grid;
+  }
+  .tix-ticket-form th, 
+  .tix-ticket-form td {
+    display: block;
+    padding: .5rem 0 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .tix-ticket-form tbody td {
+    padding: .5rem 1.5rem !important;
+  }
+  .tix-ticket-form tbody td:first-child {
+    padding-top: 1.5rem !important;
+  }
+  .tix-ticket-form tbody td:last-child {
+    padding-bottom: 1.5rem !important;
+  }
+  .tix-ticket-form tbody td::before {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0 1rem 0 0;
+  }
+  .tix-ticket-form tbody td:first-child::before {
+    content: "Tickets Summary";
+    display: block;
+    witdh: 100%;
+    border-bottom: 1px dashed var(--wp--preset--color--contrast);
+    margin-bottom: 1rem;
+  }
+  .tix-ticket-form tbody td:nth-child(2)::before {
+    content: "Purchase Date";
+  }
+}
+
+/* Smartphone Only size */
+@media screen and (max-width: 480px) {
+  .tix_tickets_table th, 
+  .tix_tickets_table td {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: .5rem 0 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .tix_tickets_table tbody td {
+    padding-bottom: 1rem;
+  }
+  .tix_tickets_table tbody td:last-child {
+    padding-bottom: 1.5rem;
+  }
+  .tix-tickets-list tbody td::before,
+  .tix-order-summary tbody td::before {
+    display: inline-block;
+    margin: 0 1rem 0 0;
+  }
+  .tix_tickets_table.tix-order-summary td {
+    padding: 0 1.5rem 1rem;
+  }
+}
+
+/*
+ * ========================
+ * Tickets Style End
+ */
+
+/** Attendees 
+ * @author gouten
+ * ========================
+ */
+
+#tix-attendees ul {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  padding: 0;
+}
+
+#tix-attendees li {
+  width: 100% !important;
+  float: none;
+  box-sizing: border-box;
+  border: 1px solid var(--wp--preset--color--contrast);
+  border-radius: 8px;
+  height: auto !important;
+  overflow: hidden;
+  padding: 15px;
+  margin: 0 !important;
+}
+
+#tix-attendees .avatar {
+  border: 3px solid var(--wp--preset--color--primary);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+}
+
+#tix-attendees .tix-field {
+  margin-left: 100px;
+  margin-bottom: 0.25em !important;
+  overflow-wrap: anywhere; 
+  word-break: keep-all;
+}
+#tix-attendees .tix-field:last-child {
+  margin-bottom: 0 !important; 
+}
+
+#tix-attendees a.tix-field {
+  text-decoration: none;
+  color: var(--wp--preset--color--contrast);
+}
+#tix-attendees a.tix-field:hover {
+  text-decoration: underline;
+}
+
+#tix-attendees .tix-attendee-name {
+  font-size: 1.25rem !important;
+  color: var(--wp--preset--color--primary);
+  font-weight: 700;
+}
+
+#tix-attendees .tix-attendee-twitter,
+#tix-attendees .tix-attendee-url {
+    padding-left: 1.25rem;
+    position: relative;
+}
+
+#tix-attendees .tix-attendee-twitter::before {
+  display: inline-block;
+  content: "";
+  width: 1em;
+  height: 1em;
+  margin-right: .25em;
+  vertical-align: middle;
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNCAyNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik0xNC4wOTU0NzksMTAuMzE2NDgyTDIyLjI4NjM1NCwxaC0xLjk0MDcxOGwtNy4xMTUzNTIsOC4wODc2ODJMNy41NTE0MTQsMUgxbDguNTg5NDg4LDEyLjIzMTA5M0wxLDIzaDEuOTQwNzE3ICBsNy41MDkzNzItOC41NDI4NjFMMTYuNDQ4NTg3LDIzSDIzTDE0LjA5NTQ3OSwxMC4zMTY0ODJ6IE0xMS40MzY1MjIsMTMuMzM4NDY1bC0wLjg3MTYyNC0xLjIxODcwNGwtNi45MjQzMTEtOS42ODgxNWgyLjk4MTMzOSAgbDUuNTg5NzgsNy44MjE1NWwwLjg2Nzk0OSwxLjIxODcwNGw3LjI2NTA2LDEwLjE2NjI3MWgtMi45ODEzMzlMMTEuNDM2NTIyLDEzLjMzODQ2NXoiLz48L3N2Zz4=") no-repeat 0 / contain;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+#tix-attendees .tix-attendee-url::before {
+  font-family: 'dashicons';
+  content: "\f103";
+  margin-right: .5em;
+  vertical-align: middle;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/*
+ * ========================
+ * Attendees Style End
+ */
+
+/** Organizers List 
+ * @author gouten
+ * ========================
+ */
+.wca25-organizers-toc ol {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: .5rem;
+}
+
+.wca25-organizer-list .wca25-organizer-profile-image {
+  width: 180px !important;
+  height: 180px !important;
+}
+.wca25-organizer-list .wca25-organizer-profile-image img {
+  border: 8px solid var(--wp--preset--color--primary);
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 781px) {
+  .wca25-organizers-toc ol {
+    grid-template-columns: 1fr 1fr;
+  }
+  .wca25-organizer-list .wca25-organizer-list-item 
+  {
+    position: relative;
+    display: block;
+  }
+  .wca25-organizer-list .wca25-organizer-profile-image {
+    width: 115px !important;
+    height: 115px !important;
+    padding: 0 15px 15px 0;
+    float: left;
+  }
+  .wca25-organizer-list .wca25-profile-meta {
+   margin-block-start: .5rem;
+   gap: .75rem;
+  }
+  .wca25-organizer-list .wca25-profile-meta h2 {
+    width: 100%;
+    font-size: var(--wp--preset--font-size--large);    
+  }
+  .wca25-organizer-list .wca25-profile-meta .wca25-profile-links {
+     gap: .75rem;
+  }
+  .wca25-organizer-list .wca25-short-bio {
+    clear:both;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wca25-organizers-toc ol {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*
+ * ========================
+ * Organizers List Style End
+ */
+
+
+/* CSS - Tanvirul Haque
+ * Start
+ *
+*/
+.wp-block-query .wp-block-post-template.is-layout-grid {
+    row-gap: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .wp-block-query .wp-block-post-template.is-layout-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 2rem;
+    }
+}
+
+.wp-block-query-pagination-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.wp-block-query-pagination-numbers span, 
+.wp-block-query-pagination-numbers a {
+    min-width: 28px;
+    aspect-ratio: 1;
+    line-height: 28px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid var(--wp--preset--color--primary);
+    text-decoration: none;
+}
+
+.wp-block-query-pagination-numbers .current, 
+.wp-block-query-pagination-numbers a:hover {
+    background-color: var(--wp--preset--color--primary);
+    color: #fff;
+    text-decoration: none;
+}
+
+.wp-block-query-pagination-next {
+    content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAxMSAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgMUw5LjUgOS41TDEgMTgiIHN0cm9rZT0iIzAzNTI5MiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjwvc3ZnPgo=");
+}
+
+.wp-block-query-pagination-previous {
+    content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAxMiAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjUgMThMMiA5LjVMMTAuNSAxIiBzdHJva2U9IiMwMzUyOTIiIHN0cm9rZS13aWR0aD0iMiIvPgo8L3N2Zz4K");
+}
+
+.wp-block-query-pagination-next-arrow,
+.wp-block-query-pagination-previous-arrow {
+    text-indent: 100%;
+    overflow: hidden;
+}
+
+/* CSS - Tanvirul Haque
+ * End
+ *
+*/
